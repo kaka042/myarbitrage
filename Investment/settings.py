@@ -46,10 +46,10 @@ SITE_URL = os.getenv('SITE_URL', 'http://localhost:8000')
 MIN_DEPOSIT_AMOUNT = Decimal(os.getenv('MIN_DEPOSIT_AMOUNT', '10.00'))
 MAX_DEPOSIT_AMOUNT = Decimal(os.getenv('MAX_DEPOSIT_AMOUNT', '50000.00'))
 
-ALLOWED_HOSTS = ['*', 'myarbitrage-92945097390.europe-west1.run.app', 'arbitrageflow.online']
+ALLOWED_HOSTS = ['*', 'https://arbitrageflow.onrender.com', 'arbitrageflow.online']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://myarbitrage-92945097390.europe-west1.run.app',
+    'https://arbitrageflow.onrender.com',
     'https://arbitrageflow.online',
     ]
 
@@ -215,7 +215,7 @@ JAZZMIN_SETTINGS = {
     
     # Admin interface colors and styling
     "welcome_sign": "Welcome to ArbitrageFlow Admin Dashboard",
-    "copyright": "ArbitrageFlow © 2025. All rights reserved.",
+    "copyright": "ArbitrageFlow © 2026. All rights reserved.",
     
     # Dashboard configuration
     "order_with_respect_to": [
